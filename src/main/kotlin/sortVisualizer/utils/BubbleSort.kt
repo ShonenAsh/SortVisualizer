@@ -1,6 +1,6 @@
-package com.example.demo.utils
+package sortVisualizer.utils
 
-import com.example.demo.bar.Bar
+import sortVisualizer.bar.Bar
 import javafx.animation.Transition
 
 class BubbleSort: SortAbstract() {

@@ -1,8 +1,8 @@
-package com.example.demo.utils
+package sortVisualizer.utils
 
-import com.example.demo.bar.Bar
-import com.example.demo.view.WindowDim.NO_OF_BARS
-import com.example.demo.view.WindowDim.WINDOW_WIDTH
+import sortVisualizer.bar.Bar
+import sortVisualizer.view.WindowDim.NO_OF_BARS
+import sortVisualizer.view.WindowDim.WINDOW_WIDTH
 import javafx.animation.FillTransition
 import javafx.animation.ParallelTransition
 import javafx.animation.Transition

@@ -1,8 +1,8 @@
-package com.example.demo.app
+package sortVisualizer.app
 
-import com.example.demo.view.MainView
-import com.example.demo.view.WindowDim.WINDOW_HEIGHT
-import com.example.demo.view.WindowDim.WINDOW_WIDTH
+import sortVisualizer.view.MainView
+import sortVisualizer.view.WindowDim.WINDOW_HEIGHT
+import sortVisualizer.view.WindowDim.WINDOW_WIDTH
 import javafx.application.Application
 import javafx.scene.Scene
 import javafx.stage.Stage

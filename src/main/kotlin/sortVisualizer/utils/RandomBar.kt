@@ -1,9 +1,9 @@
-package com.example.demo.utils
+package sortVisualizer.utils
 
-import com.example.demo.bar.Bar
-import com.example.demo.view.WindowDim.BUTTON_HBOX_OFFSET
-import com.example.demo.view.WindowDim.WINDOW_HEIGHT
-import com.example.demo.view.WindowDim.WINDOW_WIDTH
+import sortVisualizer.bar.Bar
+import sortVisualizer.view.WindowDim.BUTTON_HBOX_OFFSET
+import sortVisualizer.view.WindowDim.WINDOW_HEIGHT
+import sortVisualizer.view.WindowDim.WINDOW_WIDTH
 import javafx.scene.paint.Color
 import java.util.*
 
@@ -12,7 +12,7 @@ class RandomBar {
         fun getRandomBar(n: Int): Array<Bar> {
 
             // Create an array of random bars
-            var barArr = Array(n) { Bar(1 + Random().nextInt(n)) }
+            val barArr = Array(n) { Bar(1 + Random().nextInt(n)) }
 
             for ((i, value) in barArr.withIndex()) {
                 value.x = (i * (WINDOW_WIDTH / n)).toDouble()
@@ -24,7 +24,7 @@ class RandomBar {
         }
 
         fun getRandomBar(barArr: Array<Bar>): Array<Bar> {
-            var bars = Array(barArr.size) { i ->  Bar(barArr[i].getValue())}
+            val bars = Array(barArr.size) { i -> Bar(barArr[i].getValue()) }
 
             for((i,value) in bars.withIndex()){
                 value.x = (i * (WINDOW_WIDTH / barArr.size)).toDouble()

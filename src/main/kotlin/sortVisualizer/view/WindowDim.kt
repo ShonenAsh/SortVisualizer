@@ -1,4 +1,4 @@
-package com.example.demo.view
+package sortVisualizer.view
 
 object WindowDim {
     const val WINDOW_WIDTH = 800

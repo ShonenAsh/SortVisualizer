@@ -1,4 +1,4 @@
-package com.example.demo.bar
+package sortVisualizer.bar
 
 import javafx.animation.TranslateTransition
 import javafx.scene.shape.Rectangle

@@ -1,13 +1,13 @@
-package com.example.demo.view
+package sortVisualizer.view
 
-import com.example.demo.bar.Bar
-import com.example.demo.utils.BubbleSort
-import com.example.demo.utils.MergeSort
-import com.example.demo.utils.RandomBar
-import com.example.demo.utils.SortAbstract
-import com.example.demo.view.WindowDim.NO_OF_BARS
-import com.example.demo.view.WindowDim.WINDOW_HEIGHT
-import com.example.demo.view.WindowDim.WINDOW_WIDTH
+import sortVisualizer.bar.Bar
+import sortVisualizer.utils.BubbleSort
+import sortVisualizer.utils.MergeSort
+import sortVisualizer.utils.RandomBar
+import sortVisualizer.utils.SortAbstract
+import sortVisualizer.view.WindowDim.NO_OF_BARS
+import sortVisualizer.view.WindowDim.WINDOW_HEIGHT
+import sortVisualizer.view.WindowDim.WINDOW_WIDTH
 import javafx.animation.SequentialTransition
 import javafx.collections.FXCollections
 import javafx.geometry.Insets

@@ -1,13 +1,5 @@
 package sortVisualizer.view
 
-import sortVisualizer.bar.Bar
-import sortVisualizer.utils.BubbleSort
-import sortVisualizer.utils.MergeSort
-import sortVisualizer.utils.RandomBar
-import sortVisualizer.utils.SortAbstract
-import sortVisualizer.view.WindowDim.NO_OF_BARS
-import sortVisualizer.view.WindowDim.WINDOW_HEIGHT
-import sortVisualizer.view.WindowDim.WINDOW_WIDTH
 import javafx.animation.SequentialTransition
 import javafx.collections.FXCollections
 import javafx.geometry.Insets
@@ -19,6 +11,14 @@ import javafx.scene.layout.BorderPane
 import javafx.scene.layout.HBox
 import javafx.stage.Stage
 import javafx.util.StringConverter
+import sortVisualizer.bar.Bar
+import sortVisualizer.utils.BubbleSort
+import sortVisualizer.utils.MergeSort
+import sortVisualizer.utils.RandomBar
+import sortVisualizer.utils.SortAbstract
+import sortVisualizer.view.WindowDim.NO_OF_BARS
+import sortVisualizer.view.WindowDim.WINDOW_HEIGHT
+import sortVisualizer.view.WindowDim.WINDOW_WIDTH
 
 class MainView : BorderPane() {
 
@@ -86,8 +86,6 @@ class MainView : BorderPane() {
             }
 
             sq.play()
-            println("Main window Thread = ${Thread.currentThread().id})")
-
         }
 
         randomButton.setOnAction {

@@ -11,7 +11,7 @@ import javafx.util.Duration
 
 abstract class SortAbstract {
     val INIT_COLOR = Color.WHITE!!
-    val SELECTED_COLOR = Color.GRAY!!
+    val SELECTED_COLOR = Color.CRIMSON!!
     val SORTED_COLOR = Color.LIGHTBLUE!!
 
     companion object {

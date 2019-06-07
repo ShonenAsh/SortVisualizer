@@ -12,7 +12,7 @@ class RandomBar {
         fun getRandomBar(n: Int): Array<Bar> {
 
             // Create an array of random bars
-            val barArr = Array(n) { Bar(1 + Random().nextInt(n)) }
+            var barArr = Array(n) { Bar(1 + Random().nextInt(n)) }
 
             for ((i, value) in barArr.withIndex()) {
                 value.x = (i * (WINDOW_WIDTH / n)).toDouble()
@@ -24,7 +24,7 @@ class RandomBar {
         }
 
         fun getRandomBar(barArr: Array<Bar>): Array<Bar> {
-            val bars = Array(barArr.size) { i -> Bar(barArr[i].getValue()) }
+            var bars = Array(barArr.size) { i -> Bar(barArr[i].getValue()) }
 
             for((i,value) in bars.withIndex()){
                 value.x = (i * (WINDOW_WIDTH / barArr.size)).toDouble()

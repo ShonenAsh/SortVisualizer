@@ -1,10 +1,5 @@
 package sortVisualizer.view
 
-import sortVisualizer.bar.Bar
-import sortVisualizer.utils.BubbleSort
-import sortVisualizer.utils.MergeSort
-import sortVisualizer.utils.RandomBar
-import sortVisualizer.utils.SortAbstract
 import javafx.animation.SequentialTransition
 import javafx.collections.FXCollections
 import javafx.geometry.Insets
@@ -13,6 +8,11 @@ import javafx.scene.control.ChoiceBox
 import javafx.scene.layout.BorderPane
 import javafx.scene.layout.HBox
 import javafx.util.StringConverter
+import sortVisualizer.bar.Bar
+import sortVisualizer.utils.BubbleSort
+import sortVisualizer.utils.MergeSort
+import sortVisualizer.utils.RandomBar
+import sortVisualizer.utils.SortAbstract
 
 class SecondView(barArr: Array<Bar>) : BorderPane() {
 
@@ -70,7 +70,6 @@ class SecondView(barArr: Array<Bar>) : BorderPane() {
         sq.children.addAll(abs.startSort(bars))
 
         sq.play()
-        println("2nd window Thread = ${Thread.currentThread().id})")
     }
 
     fun setBars(newBars: Array<Bar>) {

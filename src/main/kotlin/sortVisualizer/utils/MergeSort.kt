@@ -1,8 +1,8 @@
 package sortVisualizer.utils
 
-import sortVisualizer.bar.Bar
 import javafx.animation.ParallelTransition
 import javafx.animation.Transition
+import sortVisualizer.bar.Bar
 import java.util.*
 
 class MergeSort : SortAbstract() {
@@ -77,7 +77,6 @@ class MergeSort : SortAbstract() {
             transitions.addAll(mergeSort(arr, p, q))
             transitions.addAll(mergeSort(arr, q + 1, r))
             transitions.addAll(merge(arr, p, q, r))
-            println("Current Thread = ${Thread.currentThread().id})")
         }
 
         return transitions

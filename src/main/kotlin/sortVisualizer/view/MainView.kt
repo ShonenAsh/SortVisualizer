@@ -12,15 +12,12 @@ import javafx.scene.layout.HBox
 import javafx.stage.Stage
 import javafx.util.StringConverter
 import sortVisualizer.bar.Bar
-import sortVisualizer.utils.BubbleSort
-import sortVisualizer.utils.MergeSort
-import sortVisualizer.utils.RandomBar
-import sortVisualizer.utils.SortAbstract
+import sortVisualizer.utils.*
 import sortVisualizer.view.WindowDim.NO_OF_BARS
 import sortVisualizer.view.WindowDim.WINDOW_HEIGHT
 import sortVisualizer.view.WindowDim.WINDOW_WIDTH
 
-class MainView : BorderPane() {
+class MainView(private val currentStage: Stage) : BorderPane() {
 
     companion object {
         private lateinit var abs: SortAbstract
@@ -57,6 +54,7 @@ class MainView : BorderPane() {
         val absList = ArrayList<SortAbstract>()
         absList.add(MergeSort())
         absList.add(BubbleSort())
+        absList.add(QuickSort())
 
         barHBox.children.addAll(bars)
         barHBox.alignment = Pos.BOTTOM_LEFT
@@ -81,6 +79,7 @@ class MainView : BorderPane() {
             sq.setOnFinished {
                 randomButton.isDisable = false
                 sortButton.isDisable = false
+                println("Done Sorting")
             }
 
             if (compareWindowBoolean) {
@@ -129,6 +128,8 @@ class MainView : BorderPane() {
 
         secondStage.title = "2nd Sort Algorithm"
         secondStage.scene = Scene(secondView, WINDOW_WIDTH.toDouble(), WINDOW_HEIGHT.toDouble())
+        secondStage.x = this.currentStage.x+ WINDOW_WIDTH+5
+        secondStage.y = this.currentStage.y
         secondStage.show()
     }
 }

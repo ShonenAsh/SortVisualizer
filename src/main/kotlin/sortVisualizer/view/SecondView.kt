@@ -9,10 +9,7 @@ import javafx.scene.layout.BorderPane
 import javafx.scene.layout.HBox
 import javafx.util.StringConverter
 import sortVisualizer.bar.Bar
-import sortVisualizer.utils.BubbleSort
-import sortVisualizer.utils.MergeSort
-import sortVisualizer.utils.RandomBar
-import sortVisualizer.utils.SortAbstract
+import sortVisualizer.utils.*
 
 class SecondView(barArr: Array<Bar>) : BorderPane() {
 
@@ -40,6 +37,7 @@ class SecondView(barArr: Array<Bar>) : BorderPane() {
         val absList = ArrayList<SortAbstract>()
         absList.add(MergeSort())
         absList.add(BubbleSort())
+        absList.add(QuickSort())
 
         barHBox.children.addAll(bars)
         barHBox.alignment = Pos.BOTTOM_LEFT

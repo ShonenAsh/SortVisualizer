@@ -9,13 +9,15 @@ import javafx.stage.Stage
 
 class MyApp : Application() {
     override fun start(mainStage: Stage) {
-        val mainView = MainView()
+        val mainView = MainView(mainStage)
         mainView.style = "-fx-background-color: #1c1c1c"
 
         mainStage.title = "Visual Sort"
         mainStage.scene = Scene(mainView,
                 WINDOW_WIDTH.toDouble(),
                 WINDOW_HEIGHT.toDouble())
+        mainStage.x = 200.0
+        mainStage.y = 200.0
         mainStage.show()
 
     }

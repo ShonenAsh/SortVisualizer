@@ -58,7 +58,7 @@ class MergeSort : SortAbstract() {
         for (x in p..r) {
             for (y in p..r) {
                 if (temp[x] == bars[y]) {
-                    pt.children.add(temp[x]!!.moveByX(s * (y - x)))
+                    pt.children.add(temp[x]!!.moveByX(barWidth * (y - x)))
                 }
             }
         }

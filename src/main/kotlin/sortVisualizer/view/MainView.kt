@@ -65,11 +65,13 @@ class MainView : BorderPane() {
 
         compareButton.setOnMouseClicked {
             compareWindowBoolean = true
+            compareButton.isDisable = true
             openNewWindow()
         }
 
         sortButton.setOnAction {
             sortButton.isDisable = true
+            randomButton.isDisable = true
 
             val sq = SequentialTransition()
 

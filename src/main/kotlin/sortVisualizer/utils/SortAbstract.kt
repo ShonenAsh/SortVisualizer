@@ -15,9 +15,8 @@ abstract class SortAbstract {
     val SORTED_COLOR = Color.LIGHTBLUE!!
 
     companion object {
-        // small unit of width w.r.t to the window width
         @JvmStatic
-        val s = WINDOW_WIDTH / NO_OF_BARS
+        val barWidth = WINDOW_WIDTH / NO_OF_BARS
     }
 
     fun colorBar(bars: Array<Bar>, col: Color, vararg a: Int): ParallelTransition {
@@ -47,7 +46,7 @@ abstract class SortAbstract {
     fun swapBar(bars: Array<Bar>, i: Int, j: Int): ParallelTransition {
         val parallelT = ParallelTransition()
 
-        parallelT.children.addAll(bars[i].moveByX(s * (j - i)), bars[j].moveByX((-1 * s * (j - i))))
+        parallelT.children.addAll(bars[i].moveByX(barWidth * (j - i)), bars[j].moveByX((-1 * barWidth * (j - i))))
 
         val temp = bars[i]
         bars[i] = bars[j]

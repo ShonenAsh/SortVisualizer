@@ -79,7 +79,6 @@ class MainView(private val currentStage: Stage) : BorderPane() {
             sq.setOnFinished {
                 randomButton.isDisable = false
                 sortButton.isDisable = false
-                println("Done Sorting")
             }
 
             if (compareWindowBoolean) {

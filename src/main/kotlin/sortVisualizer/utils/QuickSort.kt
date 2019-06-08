@@ -6,12 +6,13 @@ import sortVisualizer.bar.Bar
 
 class QuickSort: SortAbstract() {
     companion object {
-        private val PIVOT_COLOR = Color.RED
+        private val PIVOT_COLOR = Color.DARKCYAN
     }
     private val trans: ArrayList<Transition> = ArrayList()
 
 
     override fun startSort(bars: Array<Bar>): ArrayList<Transition> {
+        trans.clear()
         quickSort(bars,0,bars.size-1)
         trans.add(colorBar(bars,SORTED_COLOR))
 
@@ -20,7 +21,6 @@ class QuickSort: SortAbstract() {
 
     private fun quickSort(bars: Array<Bar>, low: Int, hi: Int) {
         if(low < hi){
-            println(low)
             val q = partition(bars,low,hi)
             quickSort(bars,low,q-1)
             quickSort(bars, q+1,hi)

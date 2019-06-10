@@ -55,11 +55,10 @@ class MainView(private val currentStage: Stage) : BorderPane() {
         absList.add(MergeSort())
         absList.add(BubbleSort())
         absList.add(QuickSort())
+        absList.add(InsertionSort())
 
         barHBox.children.addAll(bars)
         barHBox.alignment = Pos.BOTTOM_LEFT
-
-        // Doesn't work
 
         compareButton.setOnMouseClicked {
             compareWindowBoolean = true

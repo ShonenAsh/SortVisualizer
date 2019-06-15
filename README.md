@@ -1,6 +1,6 @@
 Sort Visualizer :
 A Sorting Algorithms Visualizer with support for side by side algorithm comparision. 
-[A detailed Readme will be soon uploaded]
+[A detailed readme will soon be uploaded]
 
 Tools used:
 IntelliJ IDEA

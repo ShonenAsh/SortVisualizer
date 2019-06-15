@@ -6,8 +6,7 @@ Tools used:
 IntelliJ IDEA
 
 Written in :
-Kotlin
-GUI : JavaFX
+Kotlin+ JavaFX
 
 How to compile/run :
 

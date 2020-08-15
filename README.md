@@ -1,6 +1,6 @@
 # Sort Visualizer
 
-<p>A Sorting Algorithms Visualizer with support for side by side algorithm comparision. 
+<p>A Sorting Algorithms Visualizer with support for side by side algorithm comparison. 
 [A detailed readme will soon be uploaded]</p>
 
 <h2>Tools used</h2>
